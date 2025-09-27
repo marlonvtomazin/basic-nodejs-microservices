@@ -7,7 +7,13 @@ const port = 3001
 
 app.use(bodyParser.json())
 
-mongoose.connect('mongodb://localhost:27017/users',{
+// para rodar local, fora do container
+/* mongoose.connect('mongodb://localhost:27017/users',{
+    // ⏳ OPÇÃO DE TIMEOUT: Define o tempo máximo para a tentativa de conexão inicial (5 segundos)
+    //serverSelectionTimeoutMS: 5000 
+}) */
+
+mongoose.connect('mongodb://mongo:27017/users',{
     // ⏳ OPÇÃO DE TIMEOUT: Define o tempo máximo para a tentativa de conexão inicial (5 segundos)
     serverSelectionTimeoutMS: 5000 
 })
