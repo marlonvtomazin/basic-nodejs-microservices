@@ -17,3 +17,6 @@ Os endpoints para testar estão na collection dentro da raiz do projeto.
 
 ### 🗺️ Diagrama dos Microsserviços
 ![Descrição do Diagrama de Microsserviços](images/architecture.jpg)
+
+### Estrutura do container
+![Descrição do container de Microsserviços](images/fullContainer.jpg)
