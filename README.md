@@ -1,18 +1,15 @@
-Baixe a imagem do mongo:
+# Tecnologia utilizadas
+## Node.js - Express
+## Mongo - Mongoose
+## RabbitMQ
+## Docker
+
+Para criar tudo a partir do docker-compose, na raiz do projeto execute:
 ```
-docker pull mongodb/mongodb-community-server:latest
-```
-Cria e inicia um novo container Docker, executando o servidor de banco de dados MongoDB Community Server em segundo plano
-```
-docker run --name mongodb -p 27017:27017 -d mongodb/mongodb-community-server:latest
+docker-compose up --build -d
 ```
 
-Para iniciar o container
-```
-docker start mongodb
-```
+Isso vai gerar tudo que é necessário para a fila funcionar.
 
-Para criar tudo aa partir do docker-compose, na raiz do projeto
-```
-docker-compose up -d
-```
+Os endpoints para testar estão na collection dentro da raiz do projeto.
+
