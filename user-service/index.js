@@ -9,13 +9,13 @@ app.use(bodyParser.json())
 
 // para rodar local, fora do container
 /* mongoose.connect('mongodb://localhost:27017/users',{
-    // ⏳ OPÇÃO DE TIMEOUT: Define o tempo máximo para a tentativa de conexão inicial (5 segundos)
+    //OPÇÃO DE TIMEOUT: Define o tempo máximo para a tentativa de conexão inicial (5 segundos)
     //serverSelectionTimeoutMS: 5000 
 }) */
 
 mongoose.connect('mongodb://mongo:27017/users',{
-    // ⏳ OPÇÃO DE TIMEOUT: Define o tempo máximo para a tentativa de conexão inicial (5 segundos)
-    serverSelectionTimeoutMS: 5000 
+    //OPÇÃO DE TIMEOUT: Define o tempo máximo para a tentativa de conexão inicial (5 segundos)
+    //serverSelectionTimeoutMS: 5000 
 })
     .then(() => console.log("Connected to MongoDB"))
     .catch(err => console.error("MongoDB connection error: ", err))
@@ -56,11 +56,7 @@ app.post('/users', async (req, res) => {
     }
 })
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`User service listening on port ${port}`)
 })
