@@ -1,4 +1,5 @@
 const amqp = require('amqplib')
+//rabbitmq front login -> guest guest
 
 async function start() {
     try {
