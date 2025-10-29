@@ -11,7 +11,7 @@ docker-compose up --build -d
 ```
 
 Isso vai gerar tudo que é necessário para a fila funcionar.
-
+ 
 Os endpoints para testar estão na collection dentro da raiz do projeto.
 
 
